@@ -1,6 +1,7 @@
 return {
-	"Abstract-IDE/Abstract-cs",
+	"folke/tokyonight.nvim",
+	lazy = false,
 	config = function()
-		vim.cmd("colorscheme abscs")
+		vim.cmd("colorscheme tokyonight-night")
 	end,
 }
