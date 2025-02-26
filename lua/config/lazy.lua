@@ -95,8 +95,20 @@ require("nvim-treesitter.configs").setup({
 	ensure_installed = { "c", "lua", "javascript", "html", "css" },
 	sync_install = false,
 	highlight = { enable = true },
-	indent = { enable = true },
+	indent = { enable = true, additional_vim_regex_highlighting = true },
+	incremental_selection = {
+		enable = true,
+		keymaps = {
+			init_selection = "gnn", -- set to `false` to disable one of the mappings
+			node_incremental = "grn",
+			scope_incremental = "grc",
+			node_decremental = "grm",
+		},
+	},
 })
+
+vim.wo.foldmethod = "expr"
+vim.wo.foldexpr = "v:lua.vim.treesitter.foldexpr()"
 
 local builtin = require("telescope.builtin")
 vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Telescope find files" })
