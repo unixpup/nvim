@@ -13,7 +13,7 @@ return {
 			},
 			format_on_save = {
 				timeout_ms = 1000,
-				lsp_format = "first",
+				lsp_format = "fallback",
 			},
 		})
 		vim.o.formatexpr = "v:lua.require'conform'.formatexpr()"
