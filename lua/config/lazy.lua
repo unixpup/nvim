@@ -89,6 +89,11 @@ require("mason-tool-installer").setup({
 	auto_update = true,
 })
 
+require("mason-nvim-dap").setup({
+	automatic_installation = true,
+	handlers = {},
+})
+
 vim.cmd([[COQnow --shut-up]])
 
 require("nvim-treesitter.configs").setup({
