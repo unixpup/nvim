@@ -33,9 +33,41 @@ require("lazy").setup({
 	},
 	-- Configure any other settings here. See the documentation for more details.
 	-- colorscheme that will be used when installing plugins.
-	install = { colorscheme = { "one_monokai" } },
+	install = { missing = true },
 	-- automatically check for plugin updates
 	checker = { enabled = true },
+	ui = {
+		size = { width = 1, height = 1 },
+		backdrop = 80,
+		pills = true, ---@type boolean
+		icons = {
+			cmd = " ",
+			config = "",
+			debug = "● ",
+			event = " ",
+			favorite = " ",
+			ft = " ",
+			init = " ",
+			import = " ",
+			keys = " ",
+			lazy = "󰒲 ",
+			loaded = "●",
+			not_loaded = "○",
+			plugin = " ",
+			runtime = " ",
+			require = "󰢱 ",
+			source = " ",
+			start = " ",
+			task = "✔ ",
+			list = {
+				"●",
+				"➜",
+				"★",
+				"‒",
+			},
+			throttle = 1000 / 60,
+		},
+	},
 })
 
 require("noice").setup({
