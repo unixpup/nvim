@@ -1,4 +1,4 @@
-# neovim Configuration files
+# neovim configuration files
 
 ![Screenshot](./images/preview.png)
 
