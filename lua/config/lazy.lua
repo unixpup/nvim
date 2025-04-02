@@ -105,7 +105,7 @@ require("mason").setup({
 	},
 })
 require("mason-lspconfig").setup({
-	ensure_installed = { "eslint", "tailwindcss", "html", "lua_ls" },
+	ensure_installed = { "eslint", "tailwindcss", "html", "lua_ls", "clangd" },
 	automatic_installation = true,
 })
 
@@ -119,6 +119,12 @@ require("mason-tool-installer").setup({
 		"tailwindcss", -- css linter/formatter
 		"eslint", -- js linter/formatter
 		"eslint_d", -- js linter but faster
+		"typescript-language-server", -- ts lsp
+		"clangd", -- c/c++ lsp
+		"rust-analyzer", -- rust lsp
+		"clang-format", -- c/c++ formatter
+		"codelldb", -- c/c++ debugger
+		"shellharden", -- shell linter/formatter
 	},
 	auto_update = true,
 })
