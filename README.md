@@ -60,5 +60,6 @@
 
 # Integrations
 
-- github/copilot.vim - GitHub Copilot integration
+- github/copilot.vim - GitHub Copilot
+- olimorris/codecompanion.nvim - Code Companion
 - andweeb/presence.nvim - Discord Rich Presence integration
