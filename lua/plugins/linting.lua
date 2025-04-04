@@ -13,8 +13,8 @@ return {
 			javascriptreact = { "eslint_d", "eslint" },
 			typescriptreact = { "eslint_d", "eslint" },
 			lua = { "luacheck" },
-			c = { "clang-tidy" },
-			cpp = { "clang-tidy" },
+			c = { "cpplint" },
+			cpp = { "cpplint" },
 			rust = { "clippy" },
 		}
 		local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })
