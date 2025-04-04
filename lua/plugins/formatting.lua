@@ -10,6 +10,12 @@ return {
 				rust = { "rustfmt" },
 				c = { "clang-format" },
 				cpp = { "clang-format" },
+				go = { "gofmt" },
+				json = { "jq" },
+				yaml = { "prettier" },
+				markdown = { "prettier" },
+				typescript = { "prettier" },
+				typescriptreact = { "prettier" },
 			},
 			format_on_save = {
 				timeout_ms = 1000,
